@@ -1,0 +1,45 @@
+body {
+    background-color: #2B2B2B;
+    padding: 0;
+    margin: 0;
+}
+
+div.web {
+    width: 50%;
+    height: 40%;
+    margin: 10% auto;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+a.twitch:link {
+    color: white;
+    text-decoration: none;
+}
+
+a.twitch:visited {
+    color: #6441A4;
+}
+
+a.twitch:hover {
+    text-decoration: underline;
+}
+
+.web h1 {
+    color: #d4ff0f;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    text-shadow: 3px 2px black;
+}
+
+.web p.link {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #fff;
+}
