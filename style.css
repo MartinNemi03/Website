@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
-body {
-    padding: 0;
-    margin: 0;
-}
-
 a:link {
     color: white;
+    text-shadow: 0px 2px black;
     text-decoration: none;
 }
 
@@ -17,41 +13,67 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+    background-color: rgb(0,0,0,0.3);
+    border-color: white;
+    text-shadow: 0px 2px black;
+    -webkit-animation: rainbow 2s linear infinite;
 }
 
-header {
+body {
     background-image: url("./img/green.png");
     background-size: 100px 100px;
-    padding: 1em;
-    border-bottom: 2px solid black;
-    -webkit-animation: header-bg 5s linear infinite;
+    -webkit-animation: page-bg 5s linear infinite;
 }
 
-header h1 {
+#content {
+    z-index: 20;
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 40%;
+	width: 50%;
+	margin: -60px 0 0 -25%;
+}
+
+h1 {
     color: #d4ff4f;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    font-size: 2em;
+    font-size: 2.5em;
     text-shadow: 3px 2px black;
+    padding: 0.75em;
 }
 
-header p {
+p {
     text-align: center;
+    margin: 1em;
 }
 
-header a {
+a {
     padding: 10px;
     font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
+    font-size: 1.2em;
+    background-color: rgb(0,0,0,0.1);
+    border: 2px solid;
     color: #fff;
 }
 
-iframe {
-    margin: 2.5em;
-    border: 3px solid black;
-}
-
-@-webkit-keyframes header-bg {
+@-webkit-keyframes page-bg {
     from { background-position: 0 0; }
     to { background-position: -100px -100px; }
+}
+
+@-webkit-keyframes link-button {
+    from { border-color: white; background-color: rgb(0,0,0,0.1); }
+    to { border-color: black; background-color: rgb(0,0,0,0.5); }
+}
+
+@-webkit-keyframes rainbow {
+    0% { color: #FF0000; }
+    16% { color: #FFFF00; }
+    32% { color: #00FF00; }
+    48% { color: #00FFFF; }
+    65% { color: #0000FF; }
+    82% { color: #FF00FF; }
+    100% { color: #FF0000; }
 }
